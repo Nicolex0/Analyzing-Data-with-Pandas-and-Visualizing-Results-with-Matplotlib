@@ -36,6 +36,16 @@ try:
     print("\nBasic stats:")
     print(df.describe())
 
+    # Group by species and find averages
+    group_means = df.groupby('species').mean()
+    print("\nAverages by species:")
+    print(group_means)
+
+    # Simple findings
+    print("\nFindings:")
+    print("- Setosa has small petals.")
+    print("- Virginica has big petals.")
+
 except:
     print("Error in math.")
     exit()
