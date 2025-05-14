@@ -49,3 +49,18 @@ try:
 except:
     print("Error in math.")
     exit()
+
+# Making plots
+try:
+    # Make a 'plots' folder
+    if not os.path.exists('plots'):
+        os.makedirs('plots')
+
+    # Plot 1: Line plot (average sepal length by species)
+    plt.plot(group_means.index, group_means['sepal_length'], 'o-')
+    plt.title('Sepal Length by Species')
+    plt.xlabel('Species')
+    plt.ylabel('Length (cm)')
+    plt.savefig('plots/line_plot.png')
+    plt.close()
+    print("\nSaved line plot.")
