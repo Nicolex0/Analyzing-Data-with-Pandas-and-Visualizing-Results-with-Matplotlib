@@ -17,6 +17,15 @@ try:
     print("First 5 rows:")
     print(df.head())
 
+    # Show data types
+    print("\nData types:")
+    print(df.dtypes)
+
+    # Check for missing data
+    print("\nMissing data:")
+    print(df.isnull().sum())
+    print("No missing data.")
+
 except:
     print("Error loading data. Check pandas and scikit-learn.")
     exit()
