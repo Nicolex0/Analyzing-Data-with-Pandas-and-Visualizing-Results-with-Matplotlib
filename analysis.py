@@ -64,3 +64,7 @@ try:
     plt.savefig('plots/line_plot.png')
     plt.close()
     print("\nSaved line plot.")
+
+except:
+    print("Error making plots. Check matplotlib and seaborn.")
+    exit()
