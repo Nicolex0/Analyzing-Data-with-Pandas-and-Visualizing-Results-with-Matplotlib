@@ -29,3 +29,13 @@ try:
 except:
     print("Error loading data. Check pandas and scikit-learn.")
     exit()
+
+# Basic Data Analysis
+try:
+    # Show stats (average, min, max)
+    print("\nBasic stats:")
+    print(df.describe())
+
+except:
+    print("Error in math.")
+    exit()
